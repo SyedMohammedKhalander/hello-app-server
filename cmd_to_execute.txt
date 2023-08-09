@@ -1,0 +1,6 @@
+docker build -t hello-world-app .
+docker run -d -p 80:8000 hello-world-app
+docker tag hello-world-app:latest syedmohammedkhalander/hello-world-app:v1
+docker push  syedmohammedkhalander/hello-world-app:v1
+docker pull syedmohammedkhalander/hello-world-app:v1
+sudo amazon-linux-extras install docker -y
